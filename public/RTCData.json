@@ -1,0 +1,62 @@
+{
+  "main": {
+    "title" : "We are the 1st Transport Cooperative In The Province of Romblon",
+    "cda" : "Reg. No. 9520-1018000000046928",
+    "details": "issued on 18th September 2019 by the Cooperative Development Authority",
+    "phone": "+63 xxx xxx xxxx",
+    "email": "romblontransport@yahoo.com",
+    "street" : "Poblacion",
+    "municipality": "San Agustin",
+    "province": "Romblon",
+    "country": "Philippines",
+    "zip": "5501",
+    "facebook": "https://facebook.com/dixon.villan",
+    "twitter": "https://twitter.com/DixonVillan",
+    "instagram": "http://github.com/dxvi"
+  },
+  "about":{
+    "title": "ROMBLON TRANSPORT COOPERATIVE (RTC)",
+    "description": "was formed in compliance with the PUV modernization program. RTC aims to provide quality transport services, supports the government for modernized transport system and ultimately bring about economic progress."
+  },
+  "geninfo":{
+    "type" : "Transport",
+    "area" : "Provincial",
+    "bond" : "Occupational",
+    "members" : "Workers, Employees, Operators & Drivers",
+    "tin" : "756-296-750-000"
+  },
+  "business": {
+    "services": [
+      {
+        "title": "Sales of Vehicle Parts",
+        "description": "PRICE is what you pay VALUE is what you get.",
+        "image": "s1.jpg"
+      },
+      {
+        "title": "Sales of Vehicle Accessories",
+        "description": "The CARS we DRIVE says a lot about us.",
+        "image": "s2.jpg"
+      },
+      {
+        "title": "AUV Operation",
+        "description": "Making transportation FAST and SAFE.",
+        "image": "s3.jpg"
+      },
+      {
+        "title": "Jeepney Operation",
+        "description": "COMPETITIVE rates, safety and reliable on-time.",
+        "image": "s4.jpg"
+      },
+      {
+        "title": "Tour Van Rental",
+        "description": "Sit back, RELAX and ENJOY the ride!",
+        "image": "s5.jpg"
+      },
+      {
+        "title": "Car Insurance",
+        "description": "Don't WORRY, drive HAPPY!",
+        "image": "s6.jpg"
+      }
+    ]
+  }
+}
