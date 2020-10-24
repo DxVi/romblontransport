@@ -8,11 +8,10 @@
   opacity: 0.9;
   padding-top: 100px;
   text-shadow: 2px 2px 4px black;
-  /* background-image: url("/images/rtc.jpg"); */
-  background-color: white;
-  background-position: center center;
+  background-color: dodgerblue;
+  /* background-position: center center;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
 }
 
 .home__top {
@@ -20,24 +19,11 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  /* justify-content: center; */
   height: 80vh;
 }
 
 .home h1 {
-  font-size: 50px;
-  font-weight: bolder;
-}
-
-.home h3 {
-  color: antiquewhite;
-  opacity: 0.9;
-  font-size: 14px;
-  font-weight: 600;
-}
-
-.home h3 > span {
-  color: white;
+  font-size: 44px;
 }
 
 .home__downIcon .MuiSvgIcon-root {
@@ -69,6 +55,6 @@
     180deg,
     transparent,
     rgba(37, 37, 37, 0.61),
-    #111
+    #2c455d
   );
 }

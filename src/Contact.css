@@ -1,0 +1,44 @@
+.contact {
+  background: linear-gradient(to bottom, white, dodgerblue);
+  color: black;
+  opacity: 0.9;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 80vh;
+  padding-top: 100px;
+}
+
+.contact__input {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.contact__head {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact__head > h2,
+.contact__head > .MuiSvgIcon-root {
+  color: blue;
+  text-shadow: 1px 1px 2px gray;
+  margin-right: 10px;
+  display: inline-block;
+  font-size: 25px;
+}
+
+.contact__form {
+  width: 80%;
+}
+
+.contact__input .MuiButtonBase-root {
+  width: 50%;
+  align-self: center;
+  margin-top: 30px;
+}

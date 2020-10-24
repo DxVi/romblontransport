@@ -1,0 +1,17 @@
+.MuiPaper-root {
+  background-color: rgb(203, 240, 203) !important;
+  font-size: 14px;
+}
+
+.MuiTabs-root {
+  background-color: lightblue;
+  /* align-self: center; */
+}
+
+.makeStyles-root-6 {
+  transition: transform 50ms ease-out;
+}
+
+.MuiGrid-container:hover {
+  transform: scale(1.02);
+}

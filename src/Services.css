@@ -1,24 +1,23 @@
-.portfolio {
+.services {
   background-color: white;
   display: flex;
   flex-direction: column;
-  padding-top: 50px;
+  padding-top: 80px;
 }
 
-.portfolio__title {
-  color: darkblue;
+.services__title {
+  color: dodgerblue;
   text-align: center;
   opacity: 0.8;
   text-shadow: 1px 1px 2px gray;
 }
 
-.portfolio__cards {
+.services__cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-top: 60px;
 }
 
-.portfolio p {
+.services p {
   font-size: 13px;
 }

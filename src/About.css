@@ -1,5 +1,5 @@
 .about {
-  background-color: #111;
+  background-color: #2c455d;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -7,43 +7,77 @@
   color: white;
   opacity: 0.9;
   height: 100vh;
-  padding-top: 100px;
+  padding-top: 40px;
   text-shadow: 2px 2px 4px black;
 }
 
 .about__pic {
-  flex: 0.3;
   padding: 10px;
   display: flex;
   justify-content: flex-end;
 }
 
 .about__pic > img {
-  border-radius: 10px;
+  border-radius: 20px;
   box-shadow: 2px 2px 4px black;
-  padding-top: 5px;
-  height: 148px;
-  width: 127px;
-  object-fit: contain;
+  padding: 0;
+  height: 300x;
+  width: 200px;
+}
+
+.about__rtc {
+  color: dodgerblue;
+  font-weight: 600;
+}
+
+.about__details,
+.about__contacts {
+  width: 70%;
 }
 
 .about__details {
-  flex: 0.7;
-  padding-left: 10px;
-  padding-right: 20px;
-  transition: transform 50ms ease-out;
+  text-align: justify;
 }
 
 .about h2 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.about p {
   font-size: 15px;
   opacity: 0.9;
 }
 
-.about__details p {
-  font-size: 13px;
-  opacity: 0.8;
+.about__contacts {
+  padding: 0;
+  margin: 0;
 }
 
+.contacts__icon {
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin: 0;
+}
+
+.contacts__icon .MuiSvgIcon-root {
+  color: lightblue;
+  margin-right: 10px;
+}
+
+.contacts__socialmedia {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.contacts__socialmedia .MuiSvgIcon-root {
+  color: dodgerblue;
+}
+/* 
 .about__downIcon {
   position: relative;
   bottom: 50px;
@@ -60,7 +94,6 @@
     180deg,
     transparent,
     rgba(37, 37, 37, 0.61),
-    blue /* #111 */
   );
 }
 
@@ -71,4 +104,4 @@
 .about__details .MuiSvgIcon-root:hover {
   color: lightgreen;
   transform: scale(1.2);
-}
+} */

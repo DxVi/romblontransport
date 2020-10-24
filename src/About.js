@@ -5,8 +5,13 @@ import TwitterIcon from '@material-ui/icons/Twitter';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import { useStateValue } from './StateProvider';
 
+import PhoneIphoneIcon from '@material-ui/icons/PhoneIphone';
+import MailOutlineIcon from '@material-ui/icons/MailOutline';
+import LanguageIcon from '@material-ui/icons/Language';
+import HomeWorkIcon from '@material-ui/icons/HomeWork';
+
 function About() {
-   const [{RTC},dispatch] = useStateValue();
+   const [{RTC}] = useStateValue();
     
     return (
         <div id="about" className="about">
@@ -16,22 +21,31 @@ function About() {
                 </div>
                 <div className="about__details">
                     <h2>About</h2>
-                    <p><span className="about_rtc">{RTC.about?.title}</span> {RTC.about?.description}</p>
+                    <p><span className="about__rtc">{RTC.about?.title}</span> {RTC.about?.description}</p>
                 </div>
-                <div className="about_contacts">
+                <div className="about__contacts">
                     <h2>Contact Details</h2>
-                    <p>Mobile : <span>{RTC.main?.phone}</span></p>
-                    <p>Address : <span>{`${RTC.main?.street}, ${RTC.main?.municipality}, ${RTC.main?.province}`}</span></p>
-                    <p>Email : <span>{RTC.main?.email}</span></p>
-                    <p>Website : <span>romblontransport@xxx.com</span></p>
-                    <a target="_blank" rel="noopener noreferrer" href={RTC.main?.facebook}><FacebookIcon /></a>
-                    <span>  </span> 
-                    <a target="_blank" rel="noopener noreferrer" href={RTC.main?.twitter}><TwitterIcon /></a>
-                    <span>  </span> 
-                    <a target="_blank" rel="noopener noreferrer" href={RTC.main?.instagram}><InstagramIcon /></a>
+                    <div className="contacts__icon">
+                        <PhoneIphoneIcon /> <p>{RTC.main?.phone}</p>
+                     </div>
+                     <div className="contacts__icon">
+                        <MailOutlineIcon /> <p>{RTC.main?.email}</p>
+                     </div>
+                     <div className="contacts__icon">
+                        <LanguageIcon /> <p> {RTC.main?.website}</p>
+                     </div>
+                     <div className="contacts__icon">
+                        <HomeWorkIcon /> <p> {RTC.main?.address}</p>
+                     </div>
+                     <div className="contacts__socialmedia">
+                        <a target="_blank" rel="noopener noreferrer" href={RTC.main?.facebook}><FacebookIcon /></a>
+                        <span>  </span> 
+                        <a target="_blank" rel="noopener noreferrer" href={RTC.main?.twitter}><TwitterIcon /></a>
+                        <span>  </span> 
+                        <a target="_blank" rel="noopener noreferrer" href={RTC.main?.instagram}><InstagramIcon /></a>
+                     </div>
                 </div>
 
-                <a href="" alt="">More</a>
                 {/* <div className="about_geninfo">
                     <h2>General Information</h2>
                     <p>Type of Cooperative : <span>{RTC.geninfo?.type}</span></p>

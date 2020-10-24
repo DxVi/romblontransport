@@ -1,15 +1,13 @@
 {
   "main": {
     "title" : "We are the 1st Transport Cooperative In The Province of Romblon",
+    "description": "Cooperative Development Authority",
+    "details": "18th September 2019",
     "cda" : "Reg. No. 9520-1018000000046928",
-    "details": "issued on 18th September 2019 by the Cooperative Development Authority",
     "phone": "+63 xxx xxx xxxx",
     "email": "romblontransport@yahoo.com",
-    "street" : "Poblacion",
-    "municipality": "San Agustin",
-    "province": "Romblon",
-    "country": "Philippines",
-    "zip": "5501",
+    "website": "romblontransport@firebase.com",
+    "address" : "Poblacion, San Agustin, Romblon",
     "facebook": "https://facebook.com/dixon.villan",
     "twitter": "https://twitter.com/DixonVillan",
     "instagram": "http://github.com/dxvi"
@@ -56,6 +54,145 @@
         "title": "Car Insurance",
         "description": "Don't WORRY, drive HAPPY!",
         "image": "s6.jpg"
+      }
+    ]
+  },
+  "fares": {
+    "odiongan": [
+      {
+        "destination": "Alcantara",
+        "rental": "PhP 2,000.00"
+      },
+      {
+        "destination": "Calatrava",
+        "rental": "PhP 2,000.00"
+      },
+      {
+        "destination": "Ferrol",
+        "rental": "PhP 1,500.00"
+      },
+      {
+        "destination": "Looc",
+        "rental": "PhP 1,500.00"
+      },
+      {
+        "destination": "San Agustin",
+        "rental": "PhP 2,500.00"
+      },
+      {
+        "destination": "San Andres",
+        "rental": "PhP 1,500.00"
+      },
+      {
+        "destination": "Sta. Fe",
+        "rental": "PhP 2,500.00"
+      },
+      {
+        "destination": "Sta. Maria",
+        "rental": "PhP 2,500.00"
+      },
+      {
+        "destination": "Bachawan",
+        "rental": "PhP 2,000.00"
+      }
+    ],
+    "sanagustin": [
+      {
+        "destination": "Alcantara",
+        "rental": "PhP 2,000.00"
+      },
+      {
+        "destination": "Calatrava",
+        "rental": "PhP 1,500.00"
+      },
+      {
+        "destination": "Ferrol",
+        "rental": "PhP 2,500.00"
+      },
+      {
+        "destination": "Looc",
+        "rental": "PhP 2,500.00"
+      },
+      {
+        "destination": "Odiongan",
+        "rental": "PhP 2,500.00"
+      },
+      {
+        "destination": "San Andres",
+        "rental": "PhP 2,000.00"
+      },
+      {
+        "destination": "Sta. Fe",
+        "rental": "PhP 3,000.00"
+      },
+      {
+        "destination": "Sta. Maria",
+        "rental": "PhP 2,000.00"
+      }
+    ],
+    "tugdan": [
+      {
+        "destination": "Alcantara",
+        "rental": "PhP 1,000.00"
+      },
+      {
+        "destination": "Calatrava",
+        "rental": "PhP 2,500.00"
+      },
+      {
+        "destination": "Ferrol",
+        "rental": "PhP 2,000.00"
+      },
+      {
+        "destination": "Looc",
+        "rental": "PhP 1,500.00"
+      },
+      {
+        "destination": "Odiongan",
+        "rental": "PhP 2,000.00"
+      },
+      {
+        "destination": "San Agustin",
+        "rental": "PhP 2,000.00"
+      },
+      {
+        "destination": "San Andres",
+        "rental": "PhP 2,500.00"
+      },
+      {
+        "destination": "Sta. Fe",
+        "rental": "PhP 2,000.00"
+      },
+      {
+        "destination": "Sta. Maria",
+        "rental": "PhP 1,500.00"
+      }
+    ],
+    "others": [
+      {
+        "origin":"San Agustin",
+        "destination": "Odiongan via Cabaliwan",
+        "rental": "PhP 2,000.00"
+      },
+      {
+        "origin":"Bachawan",
+        "destination": "Odiongan via Cabaliwan",
+        "rental": "PhP 1,500.00"
+      },
+      {
+        "origin":"Long Beach",
+        "destination": "Odiongan",
+        "rental": "PhP 3,000.00"
+      },
+      {
+        "origin":"Long Beach",
+        "destination": "Tugdan",
+        "rental": "PhP 3,000.00"
+      },
+      {
+        "origin":"Long Beach",
+        "destination": "Sta. Fe",
+        "rental": "PhP 3,500.00"
       }
     ]
   }

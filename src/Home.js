@@ -7,11 +7,13 @@ function Home() {
     const [{RTC}] = useStateValue();
 
     return (
-        <div id="home" className="home bg-gradient-overlay" style={{backgroundImage: "url('./images/home.jpg')"}}>
+        // <div id="home" className="home bg-gradient-overlay" style={{backgroundImage: "url('./images/home.jpg')"}}>
+        <div id="home" className="home">
             <div className="home__top">
-                <h1>{RTC.main?.title}</h1>
-                <h3><span>{RTC.main?.cda}</span></h3>
-                <h3><span>{RTC.main?.details}</span></h3>
+                <h1>&#10078;{RTC.main?.title}&#10078;</h1>
+                <p><span>{RTC.main?.description}</span><br />
+                   <span>{RTC.main?.cda}</span><br />
+                   <span>{RTC.main?.details}</span></p>
                 <br />
                 <br />
                 <a className="home__downIcon" href="#about">
