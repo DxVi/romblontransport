@@ -195,5 +195,151 @@
         "rental": "PhP 3,500.00"
       }
     ]
+  },
+  "officers":{
+    "bod":[
+      {
+        "name":"Randy Madamo",
+        "position":"Chairman"
+      },
+      {
+        "name":"Jose Luis Fabic",
+        "position":"Vice-Chairman"
+      },
+      {
+        "name":"Adrian Gaytano",
+        "position":"Member"
+      },
+      {
+        "name":"Justino Alojado",
+        "position":"Member"
+      },
+      {
+        "name":"---",
+        "position":"Member"
+      }
+    ],
+    "audit":[
+      {
+        "name": "Isaias Lota",
+        "position": "Chairman"
+      },
+      {
+        "name": "Sunday Montesa",
+        "position": "Vice-Chairman"
+      },
+      {
+        "name": "Roberto Maines",
+        "position": "Member"
+      }
+    ],
+    "election":[
+      {
+        "name": "Adonis Famini",
+        "position": "Chairman"
+      },
+      {
+        "name": "Crisostomo Ballera",
+        "position": "Vice-Chairman"
+      },
+      {
+        "name": "simplicio Mortel",
+        "position": "Member"
+      }
+    ],
+    "admin1":[
+      {
+        "name": "Maricar Lachica",
+        "position": "Secretary"
+      },
+      {
+        "name": "Archiel Casanova",
+        "position": "Treasurer"
+      }
+    ],
+    "education":[
+      {
+        "name": "Jose Luis Fabic",
+        "position": "Chairman"
+      },
+      {
+        "name": "Joceber Gange",
+        "position": "Vice-Chairman"
+      },
+      {
+        "name": "Ernesto Fajilagot",
+        "position": "Member"
+      }
+    ],
+    "mediation":[
+      {
+        "name": "Anacris Galisanao",
+        "position": "Chairman"
+      },
+      {
+        "name": "Nicolas Omemaga",
+        "position": "Vice-Chairman"
+      },
+      {
+        "name": "Margie Mangaya",
+        "position": "Member"
+      }
+    ],
+    "ethics":[
+      {
+        "name": "Arturo Mindoro",
+        "position": "Chairman"
+      },
+      {
+        "name": "Dothy Lyn Mangoba",
+        "position": "Vice-Chairman"
+      },
+      {
+        "name": "Judy Ferran",
+        "position": "Member"
+      }
+    ],
+    "gad":[
+      {
+        "name": "Michelle Maghanoy",
+        "position": "Chairman"
+      },
+      {
+        "name": "Zenaida Manzano",
+        "position": "Vice-Chairman"
+      },
+      {
+        "name": "---",
+        "position": "Member"
+      }
+    ],
+    "admin2":[
+      {
+        "name": "Kim Faderon",
+        "position": "General Manager"
+      },
+      {
+        "name": "---",
+        "position": "Accountant"
+      },
+      {
+        "name": "---",
+        "position": "Book Keeper"
+      }
+    ],
+    "operation":[
+      {
+        "name": "---",
+        "position": "Store Keeper"
+      },
+      {
+        "name": "---",
+        "position": "Cashier"
+      },
+      {
+        "name": "Allan Moreno",
+        "position": "Dispatcher"
+      }
+    ]
   }
 }

@@ -1,7 +1,10 @@
 import React from 'react';
 import "./Info.css";
+import { useStateValue } from './StateProvider';
+import Officers from "./Officers";
 
 function Info() {
+    const [{RTC}] = useStateValue();
     return (
         <div className="info">
             <div className="info__title">
@@ -105,6 +108,132 @@ function Info() {
                     <br />
                 </div>
             </div>
+        
+            <div className="info__title">
+                <h2>Officers</h2>  
+            </div>
+
+            <div className="info__officers">
+                {
+                    RTC ?
+                    (
+                        RTC.officers?.bod.map(officer => (
+                            <Officers name={officer.name} position={officer.position} group="BOD" />
+                        ))                        
+                    )
+                    :
+                    (<></>)
+                }
+            </div>
+            <div className="info__officers">
+                {
+                    RTC ?
+                    (
+                        RTC.officers?.audit.map(officer => (
+                            <Officers name={officer.name} position={officer.position} group="Audit" />
+                        ))                        
+                    )
+                    :
+                    (<></>)
+                }
+            </div>
+            <div className="info__officers">
+                {
+                    RTC ?
+                    (
+                        RTC.officers?.election.map(officer => (
+                            <Officers name={officer.name} position={officer.position} group="Election" />
+                        ))                        
+                    )
+                    :
+                    (<></>)
+                }
+            </div>
+            <div className="info__officers">
+                {
+                    RTC ?
+                    (
+                        RTC.officers?.admin1.map(officer => (
+                            <Officers name={officer.name} position={officer.position} group="" />
+                        ))                        
+                    )
+                    :
+                    (<></>)
+                }
+            </div>
+            <div className="info__officers">
+                {
+                    RTC ?
+                    (
+                        RTC.officers?.education.map(officer => (
+                            <Officers name={officer.name} position={officer.position} group="Education" />
+                        ))                        
+                    )
+                    :
+                    (<></>)
+                }
+            </div>
+            <div className="info__officers">
+                {
+                    RTC ?
+                    (
+                        RTC.officers?.mediation.map(officer => (
+                            <Officers name={officer.name} position={officer.position} group="Mediation" />
+                        ))                        
+                    )
+                    :
+                    (<></>)
+                }
+            </div>
+            <div className="info__officers">
+                {
+                    RTC ?
+                    (
+                        RTC.officers?.ethics.map(officer => (
+                            <Officers name={officer.name} position={officer.position} group="Ethics" />
+                        ))                        
+                    )
+                    :
+                    (<></>)
+                }
+            </div>
+            <div className="info__officers">
+                {
+                    RTC ?
+                    (
+                        RTC.officers?.gad.map(officer => (
+                            <Officers name={officer.name} position={officer.position} group="GAD" />
+                        ))                        
+                    )
+                    :
+                    (<></>)
+                }
+            </div>
+            <div className="info__officers">
+                {
+                    RTC ?
+                    (
+                        RTC.officers?.admin2.map(officer => (
+                            <Officers name={officer.name} position={officer.position} group="Admin" />
+                        ))                        
+                    )
+                    :
+                    (<></>)
+                }
+            </div>
+            <div className="info__officers">
+                {
+                    RTC ?
+                    (
+                        RTC.officers?.operation.map(officer => (
+                            <Officers name={officer.name} position={officer.position} group="Operation" />
+                        ))                        
+                    )
+                    :
+                    (<></>)
+                }
+            </div>
+        
         </div>
     )
 }
