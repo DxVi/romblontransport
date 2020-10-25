@@ -1,37 +1,42 @@
 .officers {
   display: flex;
+  justify-content: center;
+}
+.officers__container {
+  display: flex;
   flex-direction: column;
-  width: 200px;
+  width: 150px;
   align-items: center;
   background-color: white;
-  box-shadow: 0 3px 50px black;
-  margin: 20px;
-  border-radius: 50px;
+  box-shadow: 0 3px 25px black;
+  margin: 14px;
+  border-radius: 20px;
+  border: 1px solid #2c455d;
 }
 
 .officers img {
-  height: 150px;
-  width: 150px;
+  height: 100px;
+  width: 100px;
 }
 
 .officers__name {
-  color: #2c455d;
-  font-size: 16px;
+  color: blue;
+  font-size: 13px;
   font-weight: 600;
-  text-shadow: 1px 1px 1px black;
+  text-shadow: 1px 1px 1px gray;
 }
 
 .officers__position {
-  color: darkblue;
-  font-size: 14px;
-  font-weight: 600;
+  color: brown;
+  font-size: 13px;
+  font-weight: 400;
   text-shadow: 1px 1px 1px gray;
 }
 
 .officers__group {
   color: blue;
-  font-size: 14px;
-  font-weight: 600;
+  font-size: 12px;
+  font-weight: 400;
   text-shadow: 1px 1px 1px gray;
 }
 
@@ -44,7 +49,5 @@
 
 .Chairman,
 .General {
-  width: 260px;
-  background-color: antiquewhite;
-  opacity: 0.9;
+  width: 400px;
 }

@@ -6,7 +6,7 @@ function Fares() {
     return (
         <div id="fares" className="fares">
             <div className="fares__title">
-                <h2>Fares</h2>   
+                <h2>Rental Fares</h2>   
             </div>
             <div className="fares_details">
                 <ScrollableTabsButtonForce />  

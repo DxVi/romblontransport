@@ -1,14 +1,11 @@
 .fares {
   height: 100vh;
-  /* background-color: white; */
   background: linear-gradient(to bottom, antiquewhite, dodgerblue);
-  padding-top: 0;
-  margin-top: 0;
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  margin-bottom: 0;
   opacity: 0.8;
 }
 
@@ -17,4 +14,9 @@
   text-align: center;
   opacity: 0.8;
   text-shadow: 1px 1px 2px gray;
+}
+
+.fares h2 {
+  margin-top: 20;
+  margin-bottom: 20px;
 }

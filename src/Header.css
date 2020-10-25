@@ -10,13 +10,13 @@
   flex: 0.3;
   display: flex;
   align-items: center;
-  padding: 10px;
+  padding: 5px;
 }
 
 .header__left > p {
   margin-left: 10px;
   color: dodgerblue;
-  font-weight: 900;
+  font-weight: 600;
 }
 
 .header__right p {

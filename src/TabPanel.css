@@ -1,11 +1,15 @@
-.MuiPaper-root {
-  background-color: rgb(203, 240, 203) !important;
-  font-size: 14px;
-}
-
 .MuiTabs-root {
   background-color: lightblue;
-  /* align-self: center; */
+}
+
+.MuiTab-wrapper {
+  color: brown !important;
+  font-size: 12px !important;
+}
+
+.MuiPaper-root {
+  background-color: rgb(203, 240, 203) !important;
+  font-size: 13px;
 }
 
 .makeStyles-root-6 {
@@ -14,4 +18,8 @@
 
 .MuiGrid-container:hover {
   transform: scale(1.02);
+}
+
+.MuiBox-root {
+  padding-top: 10px !important;
 }

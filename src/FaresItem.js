@@ -10,11 +10,12 @@ const useStyles = makeStyles((theme) => ({
   paper: {
     padding: theme.spacing(2),
     textAlign: 'center',
-    color: theme.palette.text.secondary,
+    // color: theme.palette.text.secondary,
+    color: 'darkblue',
   },
 }));
 
-export default function CenteredGrid({origin, destination, rental}) {
+export default function FaresItem({origin, destination, rental}) {
   const classes = useStyles();
 
   return (

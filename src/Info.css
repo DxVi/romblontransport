@@ -1,10 +1,16 @@
 .info {
-  padding-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 0;
   margin-top: 0;
   background: linear-gradient(to right, antiquewhite, dodgerblue);
   opacity: 0.8;
 }
 
+.info p {
+  margin: 4px 0px;
+}
 .info__title {
   color: blue;
   text-align: center;
@@ -29,24 +35,26 @@
   flex: 0.5;
   color: #2c455d;
   text-shadow: 1px 1px 2px gray;
-  font-size: 15px;
+  font-size: 13px;
 }
 
 .infoRow__description {
   flex: 0.5;
   text-align: left;
-  color: blue;
-  text-shadow: 1px 1px 2px gray;
-  font-size: 15px;
+  color: white;
+  opacity: 0.8;
+  text-shadow: 1px 1px 2px black;
+  font-size: 13px;
 }
 
 .info__purposes,
 .info__goals {
-  padding-left: 100px;
+  padding-left: 60px;
+  width: 75%;
 }
 
 .purposes__title {
-  color: #2c455d;
+  color: brown;
   text-shadow: 1px 1px 1px black;
   font-size: 18px;
   opacity: 0.9;
@@ -63,12 +71,11 @@ h2 {
   margin-top: 40px;
 }
 
-.info__goals {
-  padding-right: 50px;
-}
-
 .info__officers {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  border: 1px dashed rgb(110, 179, 224);
+  width: 80%;
+  margin-bottom: 10px;
 }

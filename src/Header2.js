@@ -1,5 +1,4 @@
 import React from 'react';
-import "./Header2.css";
 import { Link } from "react-router-dom";
 
 import {Avatar} from "@material-ui/core";

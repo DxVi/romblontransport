@@ -7,7 +7,7 @@
   color: white;
   opacity: 0.9;
   padding-top: 100px;
-  text-shadow: 2px 2px 4px black;
+  text-shadow: 1px 1px 2px black;
   background-color: dodgerblue;
   /* background-position: center center;
   background-size: cover;
@@ -23,7 +23,11 @@
 }
 
 .home h1 {
-  font-size: 44px;
+  font-size: 30px;
+}
+
+.home p {
+  font-size: 15px;
 }
 
 .home__downIcon .MuiSvgIcon-root {

@@ -14,7 +14,7 @@ import AirplanemodeActiveIcon from '@material-ui/icons/AirplanemodeActive';
 import LocalTaxiIcon from '@material-ui/icons/LocalTaxi';
 import { useStateValue } from './StateProvider';
 
-import CenteredGrid from "./FaresItem";
+import FaresItem from "./FaresItem";
 import "./TabPanel.css";
 
 function TabPanel(props) {
@@ -55,7 +55,6 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
     width: '100%',
     // backgroundColor: theme.palette.background.paper,
-    backgroundColor: "primary",
   },
 }));
 
@@ -80,7 +79,6 @@ export default function ScrollableTabsButtonForce() {
           indicatorColor="primary"
           textColor="primary"
           aria-label="scrollable force tabs example"
-          background-Color="secondary"
         >
           <Tab label="Odiongan" icon={<EmojiTransportationIcon />} {...a11yProps(0)} />
           <Tab label="San Agustin" icon={<DirectionsBoatIcon />} {...a11yProps(1)} />
@@ -88,15 +86,13 @@ export default function ScrollableTabsButtonForce() {
           <Tab label="Others" icon={<LocalTaxiIcon />} {...a11yProps(3)} />
         </Tabs>
       </AppBar>
-      <br />
-      <CenteredGrid destination={"--- DESTINATION ---"} rental={"--- RENTAL ---"} />
+      {/* <FaresItem destination={"--- DESTINATION ---"} rental={"--- RENTAL ---"} /> */}
       <TabPanel value={value} index={0}>
-        
         {
             RTC ?(
                   
                   RTC.fares?.odiongan.map(fare => (
-                    <CenteredGrid destination={fare.destination} rental={fare.rental} />
+                    <FaresItem destination={fare.destination} rental={fare.rental} />
                  ))
                  )
                 :
@@ -107,7 +103,7 @@ export default function ScrollableTabsButtonForce() {
             {
                 RTC ?(
                     RTC.fares?.sanagustin.map(fare => (
-                        <CenteredGrid destination={fare.destination} rental={fare.rental} />
+                        <FaresItem destination={fare.destination} rental={fare.rental} />
                     ))
                     )
                     :
@@ -118,7 +114,7 @@ export default function ScrollableTabsButtonForce() {
             {
                 RTC ?(
                     RTC.fares?.tugdan.map(fare => (
-                        <CenteredGrid destination={fare.destination} rental={fare.rental} />
+                        <FaresItem destination={fare.destination} rental={fare.rental} />
                     ))
                     )
                     :
@@ -129,7 +125,7 @@ export default function ScrollableTabsButtonForce() {
             {
                 RTC ?(
                     RTC.fares?.others.map(fare => (
-                        <CenteredGrid origin={fare.origin} destination={fare.destination} rental={fare.rental} />
+                        <FaresItem origin={fare.origin} destination={fare.destination} rental={fare.rental} />
                     ))
                     )
                     :
