@@ -1,20 +1,18 @@
 import React, { useEffect } from 'react';
 import $ from "jquery";
 import './App.css';
-import Header from "./Header";
-import Header2 from "./Header2";
-import Home from "./Home";
-import About from "./About";
-import Services from "./Services";
-import Contact from "./Contact";
-
-import Fares from "./Fares";
-import Info from "./Info";
-
+import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import HeaderMain from "./Header/HeaderMain";
+import HeaderMenu1 from "./Header/HeaderMenu1";
+import HeaderMenu2 from "./Header/HeaderMenu2";
+import Home from "./Home/Home";
+import About from "./Home/About";
+import Services from "./Home/Services";
+import Contact from "./Home/Contact";
+import Fares from "./Fares/Fares";
+import Info from "./Info/Info";
 import { useStateValue } from './StateProvider';
 import { actionTypes } from './reducer';
-import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
-
 
 function App() {
   const [,dispatch] = useStateValue();
@@ -39,32 +37,29 @@ function App() {
 
   return (
     <div className="app">
-      <Router>
-       
-        <Switch>
-          <Route path="/fares">
-              <div className="app_page">
-                <Header2 />
+       <Router>
+          <HeaderMain />
+          <Switch>
+
+              <Route path="/fares">
+                <HeaderMenu2 />
                 <Fares />
-              </div>
-          </Route>
-          <Route path="/info">
-              <div className="app_page">
-                <Header2 />
+              </Route>
+              <Route path="/info">
+                <HeaderMenu2 />
                 <Info />
-              </div>
-          </Route>
-          <Route path="/">
-            <div className="app_page">
-              <Header />
-              <Home />
-              <About />
-              <Services />
-              <Contact />
-            </div>  
-          </Route>
-        </Switch>
-      </Router>
+              </Route>
+
+
+              <Route path="/">   
+                <HeaderMenu1 />
+                <Home />
+                <About />
+                <Services />
+                <Contact />              
+              </Route>
+          </Switch>
+       </Router>
     </div>
   );
 }

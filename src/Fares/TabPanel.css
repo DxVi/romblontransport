@@ -1,15 +1,18 @@
 .MuiTabs-root {
-  background-color: lightblue;
+  background-color: dodgerblue;
+  border-radius: 20px !important;
 }
 
 .MuiTab-wrapper {
-  color: brown !important;
+  color: white !important;
   font-size: 12px !important;
+  text-shadow: 1px 1px 1px black;
 }
 
 .MuiPaper-root {
-  background-color: rgb(203, 240, 203) !important;
+  background: linear-gradient(to right, antiquewhite, dodgerblue);
   font-size: 13px;
+  border-radius: 20px;
 }
 
 .makeStyles-root-6 {

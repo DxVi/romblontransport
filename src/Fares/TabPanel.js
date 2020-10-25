@@ -12,7 +12,7 @@ import EmojiTransportationIcon from '@material-ui/icons/EmojiTransportation';
 import DirectionsBoatIcon from '@material-ui/icons/DirectionsBoat';
 import AirplanemodeActiveIcon from '@material-ui/icons/AirplanemodeActive';
 import LocalTaxiIcon from '@material-ui/icons/LocalTaxi';
-import { useStateValue } from './StateProvider';
+import { useStateValue } from '../StateProvider';
 
 import FaresItem from "./FaresItem";
 import "./TabPanel.css";
@@ -86,7 +86,6 @@ export default function ScrollableTabsButtonForce() {
           <Tab label="Others" icon={<LocalTaxiIcon />} {...a11yProps(3)} />
         </Tabs>
       </AppBar>
-      {/* <FaresItem destination={"--- DESTINATION ---"} rental={"--- RENTAL ---"} /> */}
       <TabPanel value={value} index={0}>
         {
             RTC ?(

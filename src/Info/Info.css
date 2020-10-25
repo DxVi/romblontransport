@@ -5,16 +5,17 @@
   padding-top: 0;
   margin-top: 0;
   background: linear-gradient(to right, antiquewhite, dodgerblue);
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .info p {
   margin: 4px 0px;
 }
 .info__title {
-  color: blue;
+  color: white;
   text-align: center;
   text-shadow: 1px 1px 1px black;
+  opacity: 0.9;
 }
 
 .info__general {
@@ -54,16 +55,16 @@
 }
 
 .purposes__title {
-  color: brown;
+  color: dodgerblue;
   text-shadow: 1px 1px 1px black;
-  font-size: 18px;
+  font-size: 14px;
   opacity: 0.9;
 }
 
 .purposes__details {
   color: blue;
   text-shadow: 1px 1px 1px gray;
-  font-size: 15px;
+  font-size: 13px;
   opacity: 0.8;
 }
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import "./Info.css";
-import { useStateValue } from './StateProvider';
+import { useStateValue } from '../StateProvider';
 import Officers from "./Officers";
 
 function Info() {

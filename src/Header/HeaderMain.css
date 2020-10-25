@@ -1,0 +1,18 @@
+.headerMain {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #dae4f3;
+}
+
+.headerMain h1 {
+  padding-left: 10px;
+  color: dodgerblue;
+  font-size: 35px;
+  font-weight: 900;
+  margin: 3px 0px;
+}

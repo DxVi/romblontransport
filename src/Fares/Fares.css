@@ -1,19 +1,19 @@
 .fares {
   height: 100vh;
-  background: linear-gradient(to bottom, antiquewhite, dodgerblue);
+  background: linear-gradient(to right, antiquewhite, dodgerblue);
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .fares__title {
-  color: dodgerblue;
+  color: white;
   text-align: center;
-  opacity: 0.8;
-  text-shadow: 1px 1px 2px gray;
+  text-shadow: 1px 1px 1px black;
+  opacity: 0.9;
 }
 
 .fares h2 {

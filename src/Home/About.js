@@ -3,7 +3,7 @@ import "./About.css";
 import FacebookIcon from '@material-ui/icons/Facebook';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import InstagramIcon from '@material-ui/icons/Instagram';
-import { useStateValue } from './StateProvider';
+import { useStateValue } from '../StateProvider';
 
 import PhoneIphoneIcon from '@material-ui/icons/PhoneIphone';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';

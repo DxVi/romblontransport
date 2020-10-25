@@ -4,32 +4,39 @@
   justify-content: center;
   align-items: center;
   width: 300px;
-  height: 500px;
+  height: 250px;
   transition: transform 100ms ease-in;
+  border: 1px dashed rgb(190, 234, 240);
+  margin: 0;
+  margin-bottom: 10px;
 }
 
+.serviceCard h2 {
+  margin: 10px 0;
+}
 .serviceCard__title {
   text-align: center;
   color: #2c455d;
   opacity: 0.8;
   text-shadow: 1px 1px 2px lightgray;
+  font-size: 13px;
 }
 
 .serviceCard__img img {
-  width: 300px;
-  height: 300px;
+  width: 150px;
+  height: 150px;
   border-radius: 20px;
   box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.3);
   object-fit: contain;
 }
 
 .serviceCard__details p {
-  font-size: 15px;
+  font-size: 12px;
   opacity: 0.8;
   color: dodgerblue;
   text-shadow: 1px 1px 2px lightgray;
 }
 
 .serviceCard:hover {
-  transform: scale(1.09);
+  transform: scale(1.03);
 }

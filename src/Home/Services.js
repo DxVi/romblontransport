@@ -1,7 +1,7 @@
 import React from 'react';
 import "./Services.css";
 import ServiceCard from "./ServiceCard";
-import { useStateValue } from './StateProvider';
+import { useStateValue } from '../StateProvider';
 
 function Services() {
     const [{RTC}] = useStateValue();
@@ -26,7 +26,6 @@ function Services() {
                         : (<> </>)
                 }
             </div>
-            <hr />
         </div>
     )
 }

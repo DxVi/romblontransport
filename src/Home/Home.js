@@ -1,7 +1,7 @@
 import React from 'react';
 import "./Home.css";
 import PlayForWorkIcon from '@material-ui/icons/PlayForWork';
-import { useStateValue } from './StateProvider';
+import { useStateValue } from '../StateProvider';
 
 function Home() {
     const [{RTC}] = useStateValue();
