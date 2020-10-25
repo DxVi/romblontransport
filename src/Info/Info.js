@@ -1,48 +1,18 @@
 import React from 'react';
 import "./Info.css";
 import { useStateValue } from '../StateProvider';
+import MissionVision from "./MissionVision";
 import Officers from "./Officers";
 
 function Info() {
     const [{RTC}] = useStateValue();
     return (
         <div className="info">
-            <div className="info__title">
-                <h2>VISION</h2>   
-            </div>
-            
-            {/* mvcv - mission vision core values */}
-            <div className="info__mvcv">
-                <p>{RTC.main?.vision}</p>
-            </div>
+            <MissionVision />
 
-            <div className="info__title">
-                <h2>MISSION</h2>   
-            </div>
-            
-            <div className="info__mvcv">
-                <div className="mission__header">
-                    <p>{RTC.main?.mission1}</p>
-                </div>
-                <div className="mission__details">
-                    <p>- {RTC.main?.mission2}</p>
-                    <p>- {RTC.main?.mission3}</p>
-                    <p>- {RTC.main?.mission4}</p>
-                </div>
-            </div>
-
-            <div className="info__title">
-                <h2>CORE VALUES</h2>   
-            </div>
-            
-            <div className="info__mvcv">
-                <p>{RTC.main?.corevalues}</p>
-            </div>
-            
             <div className="info__title">
                 <h2>General Information</h2>   
             </div>
-
             <div className="info__general">
                 <div className="infoRow">
                     <div className="infoRow__title">
@@ -130,7 +100,7 @@ function Info() {
                     </div>
                     <div className="infoRow__description">
                         <a target="_blank" rel="noopener noreferrer" href={RTC.main?.facebook}>
-                            <p>{RTC.main?.facebook}</p>
+                            <p>www.facebook.com/RomblonTrans</p>
                         </a>
                     </div>
                 </div>
@@ -140,7 +110,7 @@ function Info() {
                     </div>
                     <div className="infoRow__description">
                         <a target="_blank" rel="noopener noreferrer" href={RTC.main?.twitter}>
-                            <p>{RTC.main?.twitter}</p>
+                            <p>www.twitter.com/RomblonTrans</p>
                         </a>
                     </div>
                 </div>
@@ -150,7 +120,7 @@ function Info() {
                     </div>
                     <div className="infoRow__description">
                         <a target="_blank" rel="noopener noreferrer" href={RTC.main?.instagram}> 
-                            <p>{RTC.main?.instagram}</p>
+                            <p>www.instagram.com/RomblonTrans</p>
                         </a>
                     </div>
                 </div>
@@ -159,7 +129,6 @@ function Info() {
             <div className="info__title">
                 <h2>Officers</h2>  
             </div>
-
             <div className="info__officers">
                 {
                     RTC ?

@@ -1,6 +1,7 @@
 .fares {
   height: 100vh;
-  background: linear-gradient(to right, antiquewhite, dodgerblue);
+  /* background: linear-gradient(to right, antiquewhite, dodgerblue); */
+  background-color: #2c455d;
   margin: 0;
   padding: 0;
   display: flex;

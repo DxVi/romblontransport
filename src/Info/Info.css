@@ -21,7 +21,7 @@
 .info__general {
   display: flex;
   flex-direction: column;
-  width: 82%;
+  width: 100%;
 }
 
 .infoRow {
@@ -34,14 +34,14 @@
 .infoRow__title {
   text-align: right;
   padding-right: 10px;
-  flex: 0.35;
+  flex: 0.4;
   color: #2c455d;
   text-shadow: 1px 1px 2px gray;
   font-size: 13px;
 }
 
 .infoRow__description {
-  flex: 0.65;
+  flex: 0.6;
   text-align: left;
   color: white;
   opacity: 0.8;
@@ -80,15 +80,6 @@ h2 {
   border: 1px dashed rgb(110, 179, 224);
   width: 80%;
   margin-bottom: 10px;
-}
-
-.info__mvcv {
-  width: 75%;
-  text-align: justify;
-  color: dodgerblue;
-  text-shadow: 1px 1px 1px black;
-  font-size: 13px;
-  font-weight: 600;
 }
 
 .infoRow__description > a {

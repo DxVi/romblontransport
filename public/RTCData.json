@@ -12,12 +12,12 @@
     "facebook": "https://www.facebook.com/RomblonTrans",
     "twitter": "https://twitter.com/RomblonTrans",
     "instagram": "https://www.instagram.com/RomblonTrans",
-    "vision":"TO BE ROMBLON’S PRIDE IN CONNECTING PEOPLE, BUSINESSES AND COMMUNITIES TO A BETTER FUTURE THROUGH TRANSPORT SERVICES.",
-    "mission1": "TO PROVIDE THE BEST TRANSPORT SYSTEM WHICH IS;",
-    "mission2": "SAFE, RELIABLE, EFFICIENT AND ENVIRONMENTALLY FRIENDLY",
-    "mission3": "CARING TO THE CUSTOMERS, COMMUTING PUBLIC, DRIVERS AND OPERATORS",
-    "mission4": "CONCERNED FOR THE COMMUNITY DEVELOPMENT AND ECONOMIC GROWTH",
-    "corevalues": "LOYALTY, HONESTY, EFFICIENCY, RELIABILITY, TRUST, COMMITMENT, TRANSPARENCY, RESPECT"
+    "vision": "To be Romblon's pride in connecting People, Businesses and Communities to a better future through Transport Services.",
+    "mission1": "To provide the best Transport System which is;",
+    "mission2": "Environmentally Friendly, Safe, Reliable and Efficient",
+    "mission3": "Caring to the Customers, Commuting Public, Drivers and Operators",
+    "mission4": "Concerned for the Community Development and Economic Growth",
+    "corevalues": "Loyalty, Honesty, Efficiency, Reliability, Trust, Commitment, Transparency, Respect"
   },
   "about":{
     "title": "ROMBLON TRANSPORT COOPERATIVE (RTC)",
@@ -350,3 +350,5 @@
     ]
   }
 }
+
+ 
