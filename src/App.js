@@ -5,6 +5,7 @@ import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import HeaderMain from "./Header/HeaderMain";
 import HeaderMenu1 from "./Header/HeaderMenu1";
 import HeaderMenu2 from "./Header/HeaderMenu2";
+import Footer from "./Header/Footer";
 import Home from "./Home/Home";
 import About from "./Home/About";
 import Services from "./Home/Services";
@@ -38,17 +39,21 @@ function App() {
   return (
     <div className="app">
        <Router>
+         
           <HeaderMain />
+
           <Switch>
 
               <Route path="/fares">
                 <HeaderMenu2 />
                 <Fares />
               </Route>
+
               <Route path="/info">
                 <HeaderMenu2 />
                 <Info />
               </Route>
+              
               <Route path="/">   
                 <HeaderMenu1 />
                 <Home />
@@ -56,7 +61,11 @@ function App() {
                 <Services />
                 <Contact />              
               </Route>
+          
           </Switch>
+
+          <Footer />
+
        </Router>
     </div>
   );

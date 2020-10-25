@@ -8,6 +8,38 @@ function Info() {
     return (
         <div className="info">
             <div className="info__title">
+                <h2>VISION</h2>   
+            </div>
+            
+            {/* mvcv - mission vision core values */}
+            <div className="info__mvcv">
+                <p>{RTC.main?.vision}</p>
+            </div>
+
+            <div className="info__title">
+                <h2>MISSION</h2>   
+            </div>
+            
+            <div className="info__mvcv">
+                <div className="mission__header">
+                    <p>{RTC.main?.mission1}</p>
+                </div>
+                <div className="mission__details">
+                    <p>- {RTC.main?.mission2}</p>
+                    <p>- {RTC.main?.mission3}</p>
+                    <p>- {RTC.main?.mission4}</p>
+                </div>
+            </div>
+
+            <div className="info__title">
+                <h2>CORE VALUES</h2>   
+            </div>
+            
+            <div className="info__mvcv">
+                <p>{RTC.main?.corevalues}</p>
+            </div>
+            
+            <div className="info__title">
                 <h2>General Information</h2>   
             </div>
 
@@ -25,7 +57,7 @@ function Info() {
                         <p>Area of Operation :</p>
                     </div>
                     <div className="infoRow__description">
-                        <p>Provincial</p>
+                        <p>Province of ROMBLON</p>
                     </div>
                 </div>
                 <div className="infoRow">
@@ -46,10 +78,10 @@ function Info() {
                 </div>
                 <div className="infoRow">
                     <div className="infoRow__title">
-                        <p>CDA Reg. No. :</p>
+                        <p>CDA :</p>
                     </div>
                     <div className="infoRow__description">
-                        <p>9520-1018000000046928</p>
+                        <p>{RTC.main?.cda}</p>
                     </div>
                 </div>
                 <div className="infoRow">
@@ -57,7 +89,69 @@ function Info() {
                         <p>BIR TIN :</p>
                     </div>
                     <div className="infoRow__description">
-                        <p>756-296-750-000</p>
+                        <p>{RTC.main?.tin}</p>
+                    </div>
+                </div>
+                <div className="infoRow">
+                    <div className="infoRow__title">
+                        <p>Address :</p>
+                    </div>
+                    <div className="infoRow__description">
+                        <p>{RTC.main?.address}</p>
+                    </div>
+                </div>
+                <div className="infoRow">
+                    <div className="infoRow__title">
+                        <p>Mobile :</p>
+                    </div>
+                    <div className="infoRow__description">
+                        <p>{RTC.main?.mobile}</p>
+                    </div>
+                </div>
+                <div className="infoRow">
+                    <div className="infoRow__title">
+                        <p>Email :</p>
+                    </div>
+                    <div className="infoRow__description">
+                        <p>{RTC.main?.email}</p>
+                    </div>
+                </div>
+                <div className="infoRow">
+                    <div className="infoRow__title">
+                        <p>Website :</p>
+                    </div>
+                    <div className="infoRow__description">
+                        <p>{RTC.main?.website}</p>
+                    </div>
+                </div>
+                <div className="infoRow">
+                    <div className="infoRow__title">
+                        <p>Facebook :</p>
+                    </div>
+                    <div className="infoRow__description">
+                        <a target="_blank" rel="noopener noreferrer" href={RTC.main?.facebook}>
+                            <p>{RTC.main?.facebook}</p>
+                        </a>
+                    </div>
+                </div>
+                <div className="infoRow">
+                    <div className="infoRow__title">
+                        <p>Twitter :</p>
+                    </div>
+                    <div className="infoRow__description">
+                        <a target="_blank" rel="noopener noreferrer" href={RTC.main?.twitter}>
+                            <p>{RTC.main?.twitter}</p>
+                        </a>
+                    </div>
+                </div>
+                <div className="infoRow">
+                    <div className="infoRow__title">
+                        <p>Instagram :</p>
+                    </div>
+                    <div className="infoRow__description">
+                        <a target="_blank" rel="noopener noreferrer" href={RTC.main?.instagram}> 
+                            <p>{RTC.main?.instagram}</p>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -194,17 +288,17 @@ function Info() {
             <div className="info__purposes">
                 <p className="purposes__title"><strong>RTC is organized to :</strong></p>
                 <div className="purposes__details">
-                    <p>1. Provide transport services</p>
-                    <p>2. Engage in businesses such as:</p>
-                    <p>&nbsp;&nbsp;a. Sales of spare parts and supplies</p>
-                    <p>&nbsp;&nbsp;b. Vehicle/Driver’s insurance</p>
-                    <p>&nbsp;&nbsp;c. Repair and Maintenance Shop</p>
-                    <p>&nbsp;&nbsp;d. Vehicle Rental Services</p>
-                    <p>&nbsp;&nbsp;e. Micro Lending</p>
-                    <p>3. Promote economic status of members</p>
-                    <p>4. Coordinate activities of cooperatives</p>
-                    <p>5. Advocate for cooperative movements</p>
-                    <p>6. Utilize new technologies</p>
+                    <p>i. Provide transport services</p>
+                    <p>ii. Engage in businesses such as:</p>
+                    <p>&nbsp;&nbsp;- Sales of spare parts and supplies</p>
+                    <p>&nbsp;&nbsp;- Vehicle/Driver’s insurance</p>
+                    <p>&nbsp;&nbsp;- Repair and Maintenance Shop</p>
+                    <p>&nbsp;&nbsp;- Vehicle Rental Services</p>
+                    <p>&nbsp;&nbsp;- Micro Lending</p>
+                    <p>iii. Promote economic status of members</p>
+                    <p>iv. Coordinate activities of cooperatives</p>
+                    <p>v. Advocate for cooperative movements</p>
+                    <p>vi. Utilize new technologies</p>
                 </div>
             </div>
             

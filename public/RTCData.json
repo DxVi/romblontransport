@@ -2,15 +2,22 @@
   "main": {
     "title" : "We are the 1st Transport Cooperative In The Province of Romblon",
     "description": "Cooperative Development Authority",
-    "details": "18th September 2019",
+    "details": "13th September 2019",
     "cda" : "Reg. No. 9520-1018000000046928",
-    "phone": "+63 xxx xxx xxxx",
+    "tin": "756-296-750-000",
+    "mobile": "+63 xxx xxx xxxx",
     "email": "romblontransport@yahoo.com",
-    "website": "romblontransport@firebase.com",
+    "website": "https://RomblonTransport.web.app",
     "address" : "Poblacion, San Agustin, Romblon",
-    "facebook": "https://facebook.com/dixon.villan",
-    "twitter": "https://twitter.com/DixonVillan",
-    "instagram": "http://github.com/dxvi"
+    "facebook": "https://www.facebook.com/RomblonTrans",
+    "twitter": "https://twitter.com/RomblonTrans",
+    "instagram": "https://www.instagram.com/RomblonTrans",
+    "vision":"TO BE ROMBLON’S PRIDE IN CONNECTING PEOPLE, BUSINESSES AND COMMUNITIES TO A BETTER FUTURE THROUGH TRANSPORT SERVICES.",
+    "mission1": "TO PROVIDE THE BEST TRANSPORT SYSTEM WHICH IS;",
+    "mission2": "SAFE, RELIABLE, EFFICIENT AND ENVIRONMENTALLY FRIENDLY",
+    "mission3": "CARING TO THE CUSTOMERS, COMMUTING PUBLIC, DRIVERS AND OPERATORS",
+    "mission4": "CONCERNED FOR THE COMMUNITY DEVELOPMENT AND ECONOMIC GROWTH",
+    "corevalues": "LOYALTY, HONESTY, EFFICIENCY, RELIABILITY, TRUST, COMMITMENT, TRANSPARENCY, RESPECT"
   },
   "about":{
     "title": "ROMBLON TRANSPORT COOPERATIVE (RTC)",

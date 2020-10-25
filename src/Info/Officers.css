@@ -5,11 +5,11 @@
 .officers__container {
   display: flex;
   flex-direction: column;
-  width: 140px;
+  width: 130px;
   align-items: center;
   background-color: white;
-  box-shadow: 0 3px 20px black;
-  margin: 14px;
+  box-shadow: 0 3px 10px black;
+  margin: 6px;
   border-radius: 20px;
   border: 1px solid #2c455d;
 }
@@ -21,22 +21,20 @@
 
 .officers__name {
   color: blue;
-  font-size: 13px;
-  font-weight: 600;
-  text-shadow: 1px 1px 1px gray;
 }
 
 .officers__position {
   color: brown;
-  font-size: 13px;
-  font-weight: 400;
-  text-shadow: 1px 1px 1px gray;
 }
 
 .officers__group {
-  color: blue;
-  font-size: 12px;
-  font-weight: 400;
+  color: darkblue;
+}
+
+.officers__name,
+.officers__position,
+.officers__group {
+  font-size: 11px;
   text-shadow: 1px 1px 1px gray;
 }
 

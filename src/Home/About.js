@@ -26,7 +26,7 @@ function About() {
                 <div className="about__contacts">
                     <h2>Contact Details</h2>
                     <div className="contacts__icon">
-                        <PhoneIphoneIcon /> <p>{RTC.main?.phone}</p>
+                        <PhoneIphoneIcon /> <p>{RTC.main?.mobile}</p>
                      </div>
                      <div className="contacts__icon">
                         <MailOutlineIcon /> <p>{RTC.main?.email}</p>
