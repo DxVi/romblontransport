@@ -36,11 +36,13 @@
 .about h2 {
   font-size: 20px;
   font-weight: 400;
+  margin-top: 10px;
 }
 
 .about p {
   font-size: 15px;
   opacity: 0.9;
+  margin: 7px;
 }
 
 .about__contacts {

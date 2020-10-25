@@ -10,16 +10,11 @@ function Contact({data}) {
     const [subject, setSubject] = useState("");
     const [message, setMessage] = useState("");
   
-    // let email = "";
-
     const handleSubmit = (e) => {
         e.preventDefault();
         window.open(`mailto:${RTC ? RTC.main?.email : ""}?subject=${subject}&body=${name}: ${message}`);
     };
 
-    // if (data) {
-    //     email = data?.email
-    // }
     return (
         <div id="contact" className="contact">
             

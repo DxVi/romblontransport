@@ -5,7 +5,7 @@
 .officers__container {
   display: flex;
   flex-direction: column;
-  width: 150px;
+  width: 140px;
   align-items: center;
   background-color: white;
   box-shadow: 0 3px 20px black;
@@ -15,8 +15,8 @@
 }
 
 .officers img {
-  height: 100px;
-  width: 100px;
+  height: 80px;
+  width: 80px;
 }
 
 .officers__name {

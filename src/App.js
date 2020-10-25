@@ -49,8 +49,6 @@ function App() {
                 <HeaderMenu2 />
                 <Info />
               </Route>
-
-
               <Route path="/">   
                 <HeaderMenu1 />
                 <Home />

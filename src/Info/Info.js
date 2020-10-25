@@ -194,17 +194,17 @@ function Info() {
             <div className="info__purposes">
                 <p className="purposes__title"><strong>RTC is organized to :</strong></p>
                 <div className="purposes__details">
-                    <p>&nbsp;1. Provide transport services</p>
-                    <p>&nbsp;2. Engage in businesses such as:</p>
-                    <p>&nbsp;&nbsp;&nbsp;a. Sales of spare parts and supplies</p>
-                    <p>&nbsp;&nbsp;&nbsp;b. Vehicle/Driver’s insurance</p>
-                    <p>&nbsp;&nbsp;&nbsp;c. Repair and Maintenance Shop</p>
-                    <p>&nbsp;&nbsp;&nbsp;d. Vehicle Rental Services</p>
-                    <p>&nbsp;&nbsp;&nbsp;e. Micro Lending</p>
-                    <p>&nbsp;3. Promote economic status of members</p>
-                    <p>&nbsp;4. Coordinate activities of cooperatives</p>
-                    <p>&nbsp;5. Advocate for cooperative movements</p>
-                    <p>&nbsp;6. Utilize new technologies</p>
+                    <p>1. Provide transport services</p>
+                    <p>2. Engage in businesses such as:</p>
+                    <p>&nbsp;&nbsp;a. Sales of spare parts and supplies</p>
+                    <p>&nbsp;&nbsp;b. Vehicle/Driver’s insurance</p>
+                    <p>&nbsp;&nbsp;c. Repair and Maintenance Shop</p>
+                    <p>&nbsp;&nbsp;d. Vehicle Rental Services</p>
+                    <p>&nbsp;&nbsp;e. Micro Lending</p>
+                    <p>3. Promote economic status of members</p>
+                    <p>4. Coordinate activities of cooperatives</p>
+                    <p>5. Advocate for cooperative movements</p>
+                    <p>6. Utilize new technologies</p>
                 </div>
             </div>
             
