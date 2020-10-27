@@ -2,18 +2,13 @@ import React, { useEffect } from 'react';
 import $ from "jquery";
 import './App.css';
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
-import HeaderMain from "./Header/HeaderMain";
-import HeaderMenu1 from "./Header/HeaderMenu1";
-import HeaderMenu2 from "./Header/HeaderMenu2";
+import Header from "./Header/Header";
+import HeaderNav from "./Header/HeaderNav";
 import Footer from "./Header/Footer";
-import Home from "./Home/Home";
-import About from "./Home/About";
-import Services from "./Home/Services";
-import Contact from "./Home/Contact";
-import Fares from "./Fares/Fares";
-import Info from "./Info/Info";
-import { useStateValue } from './StateProvider';
+import Home from "./Header/Home";
+import About from "./About/About";
 import { actionTypes } from './reducer';
+import { useStateValue } from './StateProvider';
 
 function App() {
   const [,dispatch] = useStateValue();
@@ -38,35 +33,30 @@ function App() {
 
   return (
     <div className="app">
-       <Router>
-         
-          <HeaderMain />
-
+      <Router>
+        <Header />
+        <HeaderNav />
           <Switch>
-
-              <Route path="/fares">
-                <HeaderMenu2 />
-                <Fares />
-              </Route>
-
-              <Route path="/info">
-                <HeaderMenu2 />
-                <Info />
-              </Route>
-              
-              <Route path="/">   
-                <HeaderMenu1 />
-                <Home />
-                <About />
-                <Services />
-                <Contact />              
-              </Route>
-          
+            <Route path ='/booking'>
+              <h1>Booking</h1>
+            </Route>
+            <Route path='/products'> 
+              <h1>Products</h1>
+            </Route>
+            <Route path='/fares'>
+              <h1>Fares</h1>
+            </Route>
+            <Route path="/about">
+              <About />
+            </Route>
+                  
+            <Route path="/">   
+              <Home />
+            </Route>
+            
           </Switch>
-
-          <Footer />
-
-       </Router>
+        <Footer />
+      </Router>
     </div>
   );
 }

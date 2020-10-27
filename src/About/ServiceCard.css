@@ -1,0 +1,34 @@
+.serviceCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 200px;
+  border: 1px dashed rgb(190, 234, 240);
+  margin: 5px;
+  padding: 5px;
+}
+
+.serviceCard__title {
+  text-align: center;
+  color: darkcyan;
+  opacity: 0.8;
+}
+
+.serviceCard__title h2 {
+  font-size: 15px;
+}
+
+.serviceCard__img img {
+  width: 120px;
+  height: 120px;
+  border-radius: 20px;
+  object-fit: contain;
+}
+
+.serviceCard__details p {
+  font-size: 12px;
+  opacity: 0.8;
+  color: dodgerblue;
+}

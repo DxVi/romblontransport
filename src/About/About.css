@@ -1,22 +1,52 @@
 .about {
-  background-color: #2c455d;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  opacity: 0.9;
-  height: 100vh;
-  padding-top: 40px;
-  text-shadow: 2px 2px 4px black;
+  height: 500vh;
+  justify-content: flex-start;
+}
+.geninfo,
+.services {
+  text-align: center;
 }
 
-.about__pic > img {
+.geninfo__details {
+  display: flex;
+}
+
+.geninfo__title {
+  width: 30%;
+  text-align: right;
+  color: darkcyan;
+}
+
+.services__cards {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* .geninfo .geninfo__title {
+  text-align: right;
+  color: darkblue;
+  width: 30%;
+  border: 1px solid red;
+}
+
+.geninfo .geninfo__desc {
+  text-align: right;
+  color: darkblue;
+  width: 30%;
+  border: 1px solid green;
+} */
+
+/* .geninfo span {
+  color: #2c455d;
+} */
+
+/* .about__pic > img {
   border-radius: 20px;
-  box-shadow: 2px 2px 4px black;
   padding: 0;
-  height: 300x;
-  width: 200px;
+  height: 250x;
+  width: 150px;
 }
 
 .about__rtc {
@@ -72,7 +102,7 @@
 
 .contacts__socialmedia .MuiSvgIcon-root {
   color: dodgerblue;
-}
+} */
 /* 
 .about__downIcon {
   position: relative;

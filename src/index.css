@@ -1,10 +1,14 @@
+* {
+  margin: 0;
+}
 body {
   margin: 0;
-  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif; */
 
-  font-family: "Montserrat", sans-serif;
+  /* font-family: "Montserrat", sans-serif; */
+  font-family: sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -12,4 +16,60 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.page__container {
+  width: 100%;
+  height: 100vh;
+  color: #2c455d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5px;
+  background-color: white;
+}
+
+h1 {
+  font-size: 25px;
+}
+
+h2 {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+p {
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.MuiSvgIcon-root {
+  color: #4d7394 !important;
+  font-size: 1.5rem !important;
+}
+
+.rtc__name {
+  color: dodgerblue;
+}
+
+.rtc__img {
+  margin-top: 10px;
+}
+
+.rtc__img > img {
+  padding: 0;
+  height: 300x;
+  width: 200px;
+  border-radius: 20px;
+}
+
+.component__container {
+  width: 80%;
+  text-align: justify;
+  margin-top: 0;
+  padding: 0;
+}
+
+.border__bottom {
+  border-bottom: 1px solid #dae4f3;
 }

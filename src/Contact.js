@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import "./Contact.css";
 import {TextField, TextareaAutosize, Button, FormControl} from "@material-ui/core";
 import EmailIcon from '@material-ui/icons/Email';
-import { useStateValue } from '../StateProvider';
+import { useStateValue } from './StateProvider';
 
 function Contact({data}) {
     const [{RTC}] = useStateValue();

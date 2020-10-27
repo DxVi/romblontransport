@@ -1,8 +1,0 @@
-.headerMenu2 {
-  position: sticky;
-  top: 43px;
-  z-index: 100;
-  display: flex;
-  justify-content: center;
-  background-image: linear-gradient(to bottom, white, dodgerblue);
-}
