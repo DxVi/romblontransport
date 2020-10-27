@@ -1,7 +1,7 @@
 import React from 'react';
 import "./Home.css";
-import Logo from "../About/Logo";
-import { useStateValue } from '../StateProvider';
+import Logo from "./About/Logo";
+import { useStateValue } from './StateProvider';
 import PhoneIphoneIcon from '@material-ui/icons/PhoneIphone';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import HomeWorkIcon from '@material-ui/icons/HomeWork';

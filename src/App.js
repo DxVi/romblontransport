@@ -5,13 +5,17 @@ import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import Header from "./Header/Header";
 import HeaderNav from "./Header/HeaderNav";
 import Footer from "./Header/Footer";
-import Home from "./Header/Home";
+import Home from "./Home";
+import Booking from "./Booking/Booking";
 import About from "./About/About";
+import Login from "./Login/Login";
+
+
 import { actionTypes } from './reducer';
 import { useStateValue } from './StateProvider';
 
 function App() {
-  const [,dispatch] = useStateValue();
+  const [{user},dispatch] = useStateValue();
 
   useEffect(() => {
     $.ajax({
@@ -38,7 +42,12 @@ function App() {
         <HeaderNav />
           <Switch>
             <Route path ='/booking'>
-              <h1>Booking</h1>
+              {
+                user ? (<Booking />) 
+                : (<Login />)
+              }
+
+              
             </Route>
             <Route path='/products'> 
               <h1>Products</h1>
