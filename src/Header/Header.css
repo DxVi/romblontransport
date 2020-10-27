@@ -1,3 +1,6 @@
+.home {
+  height: 90vh;
+}
 .header {
   top: 0;
   z-index: 100;
@@ -6,6 +9,7 @@
   align-items: center;
   justify-content: center;
   background-color: white;
+  padding-bottom: 2px;
 }
 
 .header__left {
@@ -31,7 +35,7 @@
 }
 
 .headerNav {
-  top: 41px;
+  top: 43px;
   z-index: 100;
   position: sticky;
   display: flex;

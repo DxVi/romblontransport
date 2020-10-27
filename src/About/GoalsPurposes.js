@@ -38,6 +38,8 @@ function GoalsPurposes() {
                 <p>12. To coordinate learning and trade with other Cooperatives</p>
                 <p>13. To advocate policies for the development of transport Cooperatives</p>
                 <p>14. To be the voice in resisting growth-centered development aggression</p>
+                <br />
+                <br />
             </div>
         </div>
     )

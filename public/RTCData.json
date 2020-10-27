@@ -4,7 +4,7 @@
     "cda"         : "Cooperative Development Authority",
     "cdano"       : "Reg. No. 9520-1018000000046928",
     "cdadate"     : "13th September 2019",
-    "name"        : "ROMBLON TRANSPORT COOPERATIVE (RTC)",
+    "name"        : "Romblon Transport Cooperative (RTC)",
     "about"       : "was formed in compliance with the PUV modernization program. RTC aims to provide quality transport services, support the government for modernized transport system and ultimately bring about economic progress."
   },
   "contacts": {
@@ -29,7 +29,7 @@
     "type"        : "Transport",
     "area"        : "Province of ROMBLON",
     "bond"        : "Occupational",
-    "members"     : "Workers, Employees, Operators & Drivers",
+    "members"     : "Employees, Operators & Drivers",
     "tin"         : "756-296-750-000"
   },
   "business": {
@@ -40,7 +40,7 @@
         "image": "s1.jpg"
       },
       {
-        "title": "Sales of Accessories",
+        "title": "Sales of Vehicle Accessories",
         "description": "The CARS we DRIVE says a lot about us.",
         "image": "s2.jpg"
       },

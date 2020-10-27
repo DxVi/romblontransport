@@ -1,17 +1,27 @@
+.home {
+  height: 115vh;
+}
 .home__title {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  width: 80%;
-  border-bottom: 1px solid #dae4f3;
+  width: 70%;
+  margin-top: 40px;
+}
+
+.home_logo {
+  display: flex;
+  justify-content: center;
 }
 
 .contacts__icon {
   display: flex;
   align-items: center;
-  padding-left: 10px;
-  padding-top: 0;
-  padding-bottom: 0;
+  padding: 0 10px;
   margin: 0;
+}
+
+.contacts__icon p {
+  padding-left: 10px;
 }

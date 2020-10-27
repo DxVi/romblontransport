@@ -1,5 +1,5 @@
 .about {
-  height: 600vh;
+  /* height: 600vh; */
   justify-content: flex-start;
 }
 .geninfo,
@@ -18,17 +18,20 @@
 
 .geninfo__details {
   display: flex;
+  text-align: left;
 }
 
 .geninfo__title {
-  width: 30%;
+  width: 36%;
   text-align: right;
   color: darkcyan;
+  margin-right: 5px;
 }
 
 .services__cards {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
 }
 

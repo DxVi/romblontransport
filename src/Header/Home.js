@@ -11,7 +11,7 @@ function Home() {
 
     return (
         <div className="home page__container">
-            <div className="home__title">
+            <div className="home__title border__bottom">
                 <h1>&#10078;{RTC.main?.title}&#10078;</h1>
                 <p>
                    <span>{RTC.main?.cda}</span><br />
@@ -19,9 +19,9 @@ function Home() {
                    <span>{RTC.main?.cdadate}</span>
                 </p>
             </div>
-
-            <Logo />
-
+            <div className="home_logo component__container">
+                <Logo />
+            </div>
             <div className="component__container">
                 <h2>About</h2>
                 <p><span className="rtc__name">{RTC.main?.name}</span> {RTC.main?.about}</p>
@@ -38,6 +38,7 @@ function Home() {
                 <div className="contacts__icon">
                     <HomeWorkIcon /> <p> {RTC.contacts?.address}</p>
                 </div>
+                <br />
             </div>
         </div>
             
