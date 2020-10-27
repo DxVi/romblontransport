@@ -4,6 +4,8 @@ import Logo from "../About/Logo";
 import Vmc from "./Vmc";
 import GenInfo from "./GenInfo";
 import Services from "./Services";
+import Officers from "./Officers";
+import GoalsPurposes from "./GoalsPurposes";
 
 function About() {
     
@@ -13,6 +15,8 @@ function About() {
             <Vmc />
             <GenInfo />
             <Services />
+            <Officers />
+            <GoalsPurposes />
         </div>
     )
 }

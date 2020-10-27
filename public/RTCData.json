@@ -11,7 +11,7 @@
     "mobile"      : "+63 xxx xxx xxxx",
     "email"       : "romblontransport@yahoo.com",
     "address"     : "Poblacion, San Agustin, Romblon",
-    "website"     : "https://romblonrransport.web.app",
+    "website"     : "https://romblontrans.web.app",
     "facebook"    : "https://facebook.com/romblontrans",
     "twitter"     : "https://twitter.com/romblontrans",
     "instagram"   : "https://instagram.com/romblontrans"
@@ -26,11 +26,11 @@
   },
   
   "geninfo":{
-    "type" : "Transport",
-    "area" : "Province of ROMBLON",
-    "bond" : "Occupational",
-    "members" : "Workers, Employees, Operators & Drivers",
-    "tin" : "756-296-750-000"
+    "type"        : "Transport",
+    "area"        : "Province of ROMBLON",
+    "bond"        : "Occupational",
+    "members"     : "Workers, Employees, Operators & Drivers",
+    "tin"         : "756-296-750-000"
   },
   "business": {
     "services": [
