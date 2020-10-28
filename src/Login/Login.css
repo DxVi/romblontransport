@@ -1,5 +1,72 @@
-.login__header {
+.login {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  color: #2c455d;
+  width: 100%;
+}
+
+.choice__panel {
+  display: flex;
+}
+
+.login__panel {
+  /* background-color: dodgerblue; */
+  border: 3px dashed dodgerblue;
+}
+
+.signup__panel {
+  /* background-color: darkgreen; */
+  border: 3px dashed darkgreen;
+}
+
+.login__panel,
+.signup__panel {
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  height: 250px;
+}
+
+.login__inputs,
+.signup__inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login__buttons,
+.signup__buttons {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+  width: 250px;
+}
+
+.hide__panel {
+  display: none;
+}
+
+.login p {
+  color: red;
+  align-self: center;
+}
+
+.choice__buttons {
+  display: flex;
+  justify-content: space-evenly;
+  width: 250px;
+  margin: 20px;
+}
+
+.choice__login {
+  background-color: dodgerblue !important;
+}
+
+.choice__signup {
+  background-color: darkgreen !important;
 }

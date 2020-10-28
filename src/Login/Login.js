@@ -1,107 +1,235 @@
-import React, { useState } from 'react';
+import { Button } from '@material-ui/core';
+import React, { useEffect, useState } from 'react';
 import './Login.css';
-import {TextField, TextareaAutosize, Button, FormControl, InputLabel, Input, InputAdornment, IconButton} from "@material-ui/core";
-import VpnKeyIcon from '@material-ui/icons/VpnKey';
+import db from '../firebase';
 import { useStateValue } from '../StateProvider';
 
-import clsx from 'clsx';
-import Grid from '@material-ui/core/Grid';
-import { makeStyles } from '@material-ui/core/styles';
-import AccountCircle from '@material-ui/icons/AccountCircle';
-import { Visibility, VisibilityOff } from '@material-ui/icons';
-
-  
-const useStyles = makeStyles((theme) => ({
-    margin: {
-        margin: theme.spacing(1),
-      },
-    root: {
-      display: 'flex',
-      flexWrap: 'wrap',
-    },
-    margin: {
-      margin: theme.spacing(1),
-    },
-    withoutLabel: {
-      marginTop: theme.spacing(3),
-    },
-    textField: {
-      width: '25ch',
-    },
-  }));
-  
-    
+ 
 function Login() {
-    const [{user}] = useStateValue();
-    const [username, setUsername] = useState("");
-    const [password, setPassword] = useState("");
-    const [confirm, setConfirm] = useState("");
+  const [{user, avatar}, dispatch] = useStateValue(null);
+  const [hidePanel, setHidePanel] = useState("SIGNUP");
 
-    const [values, setValues] = React.useState({
-        amount: '',
-        password: '',
-        weight: '',
-        weightRange: '',
-        showPassword: false,
-      });
-      
-    const handleChange = (prop) => (event) => {
-        setValues({ ...values, [prop]: event.target.value });
-      };
+  /********** LOGIN **********/
+  const [loginUsername, setLoginUsername] = useState("");
+  const [loginPassword, setLoginPassword] = useState("");
     
-      const handleClickShowPassword = () => {
-        setValues({ ...values, showPassword: !values.showPassword });
-      };
-    
-      const handleMouseDownPassword = (event) => {
-        event.preventDefault();
-      };
+  const [loginInputValid, setLoginInputValid] = useState(false); //--> IF loginInputValid = TRUE then query DB 
+  const [loginInputError, setLoginInputError] = useState("");
+  const [loginValid, setLoginValid] = useState(true);
+  
+  const LoginCancel = (e) => {
+    e.preventDefault();
+    setLoginUsername("");
+    setLoginPassword("");
+    setLoginInputError("");
+    setLoginValid(true);
+  }
 
-    const classes = useStyles();
+  const Login = (e) => {
+    e.preventDefault()
+    setLoginInputError("");
+    // setLoginValid(true);
+      if(loginUsername.length < 3 || loginUsername.length > 10 || 
+         loginPassword.length < 3 || loginPassword.length > 10) {
+         setLoginInputError("User Name and Password must be 3 to 10 letters.")
+      }else {
+         setLoginInputValid(true);
+      }
+  }
+
+  useEffect(() => {
+    if(loginInputValid){
+      console.log("im here....")
+      db.collection("users")
+      .where("username", "==", loginUsername)
+      .where("password","==",loginPassword)
+      .get()
+      .then(function(querySnapshot) {
+        console.log("test if exist....",querySnapshot.count)
+ 
+        setLoginValid(false);
+        console.log("outsideloginvalid>>>>>>",loginValid)
+        querySnapshot.forEach(function(doc) {
+          // doc.data() is never undefined for query doc snapshots
+          // console.log("doc.id>>>",doc.id)
+          
+          if(doc.exists){
+            setLoginValid(true);
+            dispatch({
+              type: "SET_USER",
+              user: loginUsername
+            });
+            dispatch({
+              type: "SET_AVATAR",
+              avatar: doc.data().image
+            })
+            console.log("found>>>>", doc.data().image)
+          }else{
+            console.log("not found>>>>")
+          }
+          
+        });
+      })
+        .catch(function(error) {
+          console.log("Error getting documents: ", error);
+        });
+    }
+    if (loginInputValid){
+      setLoginUsername("");
+      setLoginPassword("");
+      setLoginInputValid(false);
+      // setLoginValid(false);
+    }
+  }, [loginInputValid,dispatch, loginUsername, loginPassword,  user])
+
+  useEffect(()=>{
+    if (!loginValid){
+      setLoginInputError("Invalid User Name/Password");
+    }
+    console.log(">>>>", loginValid)
+  },[loginValid])
+
+
+  /********** SIGNUP **********/
+  const [signupUsername, setSignupUsername] = useState("");
+  const [signupPassword, setSignupPassword] = useState("");
+  const [signupPasswordConfirm, setSignupPasswordConfirm] = useState("");
+
+  const [signupValidInput, setSignupValidInput] = useState(false); //--> IF signupValidInput = TRUE then query DB
+  const [signupInputError, setSignupInputError] = useState("");
+  const [signupValid, setSignupValid] = useState();
+
+  const SignupCancel = (e) => {
+    e.preventDefault();
+
+  }
+
+  const Signup = (e) => {
+    e.preventDefault();
+  }
+
+  useEffect(() => {
+
+  },[signupValidInput, dispatch, signupUsername, signupPassword, user])
+
+
+
+  
     return (
-        <div className="login page__container">
-            <div className="login__header">
-                <h2>Login</h2>
-                <VpnKeyIcon />
+        <div className="login">
+
+          <div className="choice__panel">
+            <div className={`login__panel ${hidePanel === 'LOGIN' ? 'hide__panel' : ''}`}>
+            <h2>Login</h2>
+            <br />
+            <form>
+              <div className="login__inputs">
+              <input
+                type="text"
+                value={loginUsername}
+                placeholder="User Name"
+                onChange={(e) => setLoginUsername(e.target.value.toLowerCase())}
+              />
+              <br />
+              <input
+                type="password"
+                value={loginPassword}
+                placeholder="Password"
+                onChange={(e) => setLoginPassword(e.target.value.toLowerCase())}
+              />
+              <br />
+              <p>{loginInputError}</p>
+              <p>{user? "" : loginValid}</p>
             </div>
-            <div className="login__form">
-                    <form className="login__input">
-                        <div className={classes.margin}>
-                            <Grid container spacing={1} alignItems="flex-end">
-                            <Grid item>
-                                <AccountCircle />
-                            </Grid>
-                            <Grid item>
-                                <TextField id="input-with-icon-grid" label="User Name" />
-                            </Grid>
-                            </Grid>
-                        </div>
-                    </form>
-
-        <FormControl className={clsx(classes.margin, classes.textField)}>
-          <InputLabel htmlFor="standard-adornment-password">Password</InputLabel>
-          <Input
-            id="standard-adornment-password"
-            type={values.showPassword ? 'text' : 'password'}
-            value={values.password}
-            onChange={handleChange('password')}
-            endAdornment={
-              <InputAdornment position="end">
-                <IconButton
-                  aria-label="toggle password visibility"
-                  onClick={handleClickShowPassword}
-                  onMouseDown={handleMouseDownPassword}
-                >
-                  {values.showPassword ? <Visibility /> : <VisibilityOff />}
-                </IconButton>
-              </InputAdornment>
-            }
-          />
-        </FormControl>
-
-
-
+              <div className="login__buttons">
+              <Button
+                type = "submit"
+                color = "primary"
+                variant = "contained"
+                onClick = {Login}
+                disabled = {!loginUsername || !loginPassword}
+              >Submit</Button>
+               
+              <Button
+                type = "submit"
+                color = "secondary"
+                variant = "contained"
+                onClick = {LoginCancel}
+              >Cancel</Button>
             </div>
+              
+            </form>
+          </div>
+
+            <div className={`signup__panel ${hidePanel === 'SIGNUP' ? 'hide__panel' : ''}`}>
+            <h2>Sign-Up</h2>
+            <br />
+            <form>
+              <div className="signup__inputs">
+                <input
+                  type="text"
+                  value={signupUsername}
+                  placeholder="User Name"
+                  onChange={(e) => setSignupUsername(e.target.value.toLowerCase())}
+                />
+                <br />
+                <input
+                  type="password"
+                  value={signupPassword}
+                  placeholder="Password"
+                  onChange={(e) => setSignupPassword(e.target.value.toLowerCase())}
+                />
+                <br />
+                <input
+                  type="password"
+                  value={signupPasswordConfirm}
+                  placeholder="Password"
+                  onChange={(e) => setSignupPasswordConfirm(e.target.value.toLowerCase())}
+                />
+                <br />
+              </div>
+              <div className="signup__buttons">
+                <Button
+                  type = "submit"
+                  color = "primary"
+                  variant = "contained"
+                  onClick = {(Signup)}
+                  disabled = {!signupUsername || !signupPassword || signupPasswordConfirm}
+                >Submit</Button>
+                
+                <Button
+                  type = "submit"
+                  color = "secondary"
+                  variant = "contained"
+                  onClick = {SignupCancel}
+                >Cancel</Button>
+              </div>
+            </form>
+          </div>
+          </div>
+          <div className="choice__buttons">
+            {/* <form className="choiceButtons__button"> */}
+              <div>
+                <Button 
+                    className="choice__login"
+                    type = "submit"
+                    color = "primary"
+                    variant = "contained"
+                    onClick = {(e)=>{setHidePanel('SIGNUP')}}
+                >Login</Button>
+              </div>
+              <div>
+                <Button
+                    className="choice__signup"
+                    type = "submit"
+                    color = "primary"
+                    variant = "contained"
+                    onClick = {(e)=>{setHidePanel('LOGIN')}}
+                >Sign-Up</Button>
+              </div>
+            {/* </form> */}
+          </div>
+        
         </div>
     )
 }

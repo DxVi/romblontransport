@@ -12,7 +12,7 @@ function Officers() {
                     RTC ?
                     (
                         RTC.officers?.bod.map(officer => (
-                            <OfficerCard name={officer.name} position={officer.position} group="BOD" />
+                            <OfficerCard key={officer.name} name={officer.name} position={officer.position} group="BOD" />
                         ))                        
                     )
                     :

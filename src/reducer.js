@@ -1,10 +1,12 @@
 export const initialState = {
   user: null,
+  avatar: null,
   RTC: {},
 };
 
 export const actionTypes = {
   SET_USER: "SET_USER",
+  SET_AVATAR: "SET_AVATAR",
   SET_RTC: "SET_RTC",
 };
 
@@ -16,6 +18,12 @@ const reducer = (state, action) => {
       return {
         ...state,
         user: action.user,
+      };
+      
+    case actionTypes.SET_AVATAR:
+      return {
+        ...state,
+        avatar: action.avatar,
       };
       
     case actionTypes.SET_RTC:

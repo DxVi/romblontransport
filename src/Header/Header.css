@@ -23,7 +23,13 @@
   flex: 0.25;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   padding-right: 10px;
+}
+
+.header__right p {
+  margin-right: 5px;
+  color: darkcyan;
 }
 
 .header__left h1 {
@@ -64,4 +70,20 @@
 
 .headerNavItem :hover {
   color: crimson !important;
+}
+
+.header__avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__avatar .MuiSvgIcon-root {
+  margin-left: 5px;
+  color: green !important;
+}
+
+.header__avatar .MuiAvatar-root {
+  width: 25px !important;
+  height: 25px !important;
 }

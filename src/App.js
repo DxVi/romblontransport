@@ -9,10 +9,12 @@ import Home from "./Home";
 import Booking from "./Booking/Booking";
 import About from "./About/About";
 import Login from "./Login/Login";
-
+import SignUp from './Login/SignUp';
+import ImageUpload from './Login/ImageUpload';
 
 import { actionTypes } from './reducer';
 import { useStateValue } from './StateProvider';
+
 
 function App() {
   const [{user},dispatch] = useStateValue();
@@ -41,13 +43,23 @@ function App() {
         <Header />
         <HeaderNav />
           <Switch>
+
+            <Route path ='/imageUpload'>
+              <ImageUpload />
+            </Route>
+            <Route path ='/login'>
+              <Login />
+            </Route>
+            <Route path ='/signup'>
+              <SignUp />
+            </Route>
+
+
             <Route path ='/booking'>
               {
                 user ? (<Booking />) 
                 : (<Login />)
               }
-
-              
             </Route>
             <Route path='/products'> 
               <h1>Products</h1>
