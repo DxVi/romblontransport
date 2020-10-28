@@ -1,0 +1,21 @@
+.booking {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.booking__chats {
+  width: 80%;
+  height: 70%;
+  border: 1px dashed lightblue;
+  margin-top: 20px;
+  /* margin: 20px 20px; */
+}
+
+.booking__inputs {
+  width: 80%;
+  height: 5%;
+  border: 1px dashed lightgray;
+}

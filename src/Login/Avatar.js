@@ -5,7 +5,7 @@ import './Avatar.css';
 import { useStateValue } from '../StateProvider';
 
 function Avatar() {
-    const [{user,userid}, dispatch] = useStateValue();
+    const [{userid}, dispatch] = useStateValue();
 
     const [image, setImage] = useState(null);
     const [progress, setProgress] = useState(0);
@@ -57,16 +57,20 @@ function Avatar() {
     }
 
     return (
-        <div className="imageupload">
-            <form>
-                <FormControl>
-                <progress className="imageupload__progress" value={progress} max="100" />
-                <Input type="file" onChange={handleChange} />
-                <Button disabled={!image} color="primary" onClick={handleUpload}>
-                    Upload
-                </Button>
-                </FormControl>    
-            </form>
+        <div className="avatar">
+            <div className="avatar__details">
+                <h2>Upload Your Picture</h2>
+                <form>
+                    <FormControl>
+                    <progress className="avatar__progress" value={progress} max="100" />
+                    <Input type="file" onChange={handleChange}/>
+                    <br />
+                    <Button disabled={!image} color="primary" onClick={handleUpload}>
+                        Upload
+                    </Button>
+                    </FormControl>    
+                </form>
+            </div>
         </div>
     )
 }

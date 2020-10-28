@@ -5,6 +5,7 @@
 
   color: #2c455d;
   width: 100%;
+  height: 100vh;
 }
 
 .choice__panel {
@@ -12,13 +13,16 @@
 }
 
 .login__panel {
-  /* background-color: dodgerblue; */
   border: 3px dashed dodgerblue;
 }
 
 .signup__panel {
-  /* background-color: darkgreen; */
   border: 3px dashed darkgreen;
+}
+
+.login Input {
+  height: 25px;
+  width: 250px;
 }
 
 .login__panel,
@@ -29,7 +33,7 @@
   flex-direction: column;
   align-items: center;
   width: 300px;
-  height: 250px;
+  height: 280px;
 }
 
 .login__inputs,
