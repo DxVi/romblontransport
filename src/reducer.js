@@ -1,10 +1,12 @@
 export const initialState = {
+  userid: null,
   user: null,
   avatar: null,
   RTC: {},
 };
 
 export const actionTypes = {
+  SET_USERID: "SET_USERID",
   SET_USER: "SET_USER",
   SET_AVATAR: "SET_AVATAR",
   SET_RTC: "SET_RTC",
@@ -14,6 +16,12 @@ const reducer = (state, action) => {
   // console.log("reducer>>>",action);
 
   switch (action.type) {
+    case actionTypes.SET_USERID:
+      return {
+        ...state,
+        userid: action.userid,
+      };
+
     case actionTypes.SET_USER:
       return {
         ...state,

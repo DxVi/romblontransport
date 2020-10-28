@@ -9,8 +9,7 @@ import Home from "./Home";
 import Booking from "./Booking/Booking";
 import About from "./About/About";
 import Login from "./Login/Login";
-import SignUp from './Login/SignUp';
-import ImageUpload from './Login/ImageUpload';
+import Avatar from './Login/Avatar';
 
 import { actionTypes } from './reducer';
 import { useStateValue } from './StateProvider';
@@ -44,16 +43,12 @@ function App() {
         <HeaderNav />
           <Switch>
 
-            <Route path ='/imageUpload'>
-              <ImageUpload />
+            <Route path ='/avatar'>
+              <Avatar />
             </Route>
             <Route path ='/login'>
               <Login />
             </Route>
-            <Route path ='/signup'>
-              <SignUp />
-            </Route>
-
 
             <Route path ='/booking'>
               {

@@ -1,13 +1,14 @@
 import { Button, FormControl, Input } from '@material-ui/core'
 import React, { useState } from 'react'
 import db, {storage} from '../firebase';
-import firebase from 'firebase';
-import './ImageUpload.css';
+import './Avatar.css';
+import { useStateValue } from '../StateProvider';
 
-function ImageUpload({username}) {
+function Avatar() {
+    const [{user,userid}, dispatch] = useStateValue();
+
     const [image, setImage] = useState(null);
     const [progress, setProgress] = useState(0);
-    const [caption, setCaption] = useState('');
 
     const handleChange = (e) => {
         if (e.target.files[0]){
@@ -28,7 +29,8 @@ function ImageUpload({username}) {
             },
             (error) => {
                 // error function...
-                console.loge(error);
+                console.log("here>>>");
+                console.log(error);
                 alert(error.message);
             },
             () => {
@@ -39,16 +41,16 @@ function ImageUpload({username}) {
                 .getDownloadURL()
                 .then(url => {
                     // post image inside db
-                    db.collection('posts').add({
-                        caption: caption,
-                        imageUrl: url,
-                        username: username,
-                        timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+                    db.collection('users')
+                    .doc(userid).update({
+                        image: url,
                     });
                     setProgress(0);
-                    setCaption('');
                     setImage(null);
-
+                    dispatch({
+                        type: "SET_AVATAR",
+                        avatar: url
+                    })
                 })
             }
         )
@@ -59,9 +61,8 @@ function ImageUpload({username}) {
             <form>
                 <FormControl>
                 <progress className="imageupload__progress" value={progress} max="100" />
-                <Input type="text" value={caption} onChange={event => setCaption(event.target.value)} placeholder="Enter a caption..." />
                 <Input type="file" onChange={handleChange} />
-                <Button disabled={!image || !caption} color="primary" onClick={handleUpload}>
+                <Button disabled={!image} color="primary" onClick={handleUpload}>
                     Upload
                 </Button>
                 </FormControl>    
@@ -70,4 +71,4 @@ function ImageUpload({username}) {
     )
 }
 
-export default ImageUpload
+export default Avatar

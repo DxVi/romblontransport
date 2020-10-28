@@ -30,7 +30,7 @@ function Header() {
                                 src={avatar}
                                 alt=""
                                 />
-                                <Link to="/imageUpload">
+                                <Link to="/avatar">
                                     <PersonAddIcon />
                                 </Link>
                             </div>
